@@ -1,0 +1,61 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: "Roboto" !important;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #379683 1%, #5cdb95);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+}
+
+ul li {
+  list-style-type: none;
+}
+ol li {
+  list-style-position: inside;
+}
+a {
+  text-decoration: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+.loading {
+  height: 100vh;
+  color: white;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+button {
+  outline: none;
+
+  background-color: transparent;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 0.5rem !important;
+  }
+}
